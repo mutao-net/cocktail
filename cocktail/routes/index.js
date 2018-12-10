@@ -68,7 +68,6 @@ router.get('/search', function(req, res, next) {
          return res.render('index', { 'res': value,'messages': 'No Result', 'keywords': keywords });
       });
     }else{
-      console.log(value);
       res.render('index', { 'res': value, 'keywords': keywords });
     }
   }).catch(function onRejected(error){

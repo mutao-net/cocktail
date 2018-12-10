@@ -13,9 +13,9 @@ block content
           option(value='3') Alcoholic
           option(value='4') NonAlcoholic
       if keywords
-        input.form-control(type='text', placeholder='keywords', name='keywords', value='#{keywords}')
+        input.form-control(class='type', type='text', placeholder='keywords', name='keywords', value='#{keywords}')
       else
-        input.form-control(type='text', placeholder='keywords', name='keywords')
+        input.form-control(class='type', type='text', placeholder='keywords', name='keywords')
       span.input-group-btn
         button.btn.btn-default(type='submit') Search
   section.article
