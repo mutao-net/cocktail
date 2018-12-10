@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  section.detail
+      img.card-img(src='#{res.strDrinkThumb}', alt='', srcset="")
+      .card-content
+        h1.card-title #{res.strDrink}
+        .recipe
+          table
+            tbody
+              - for (var i = 0; i < 15; i++) {
+                - var ingredient = 'strIngredient' + i
+                - var strMeasure = 'strMeasure' + i
+                - var flag = res[ingredient] ? true : false
+                if flag
+                  tr
+                    th #{res[ingredient]}
+                    td #{res[strMeasure]}
+              - }
+      .card-link
+        a(href='/') Index

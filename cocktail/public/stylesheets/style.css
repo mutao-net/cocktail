@@ -1,0 +1,108 @@
+body {
+  padding: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
+
+.detail{
+  width: 500px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: auto;
+}
+
+.recipe {
+  display: flex;
+  justify-content: center;
+}
+
+th, td {
+  text-align:  left;
+  padding: 0 40px;
+  font-size: 16px;
+}
+
+.header-img {
+  position: relative;
+  padding-bottom: 30px;
+  }
+
+.header-img a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 30px;
+  text-decoration: none;
+  }
+
+.header-img img {
+  width: 100%;
+  max-height: 700px;
+  filter: blur(2px) brightness(55%);
+  border: solid 1px ;
+  }
+
+.input-group {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+p.message{
+  color: red;
+  font-size: 22px;
+}

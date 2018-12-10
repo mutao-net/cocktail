@@ -1,0 +1,30 @@
+extends layout
+block content
+  .header-img
+    img(src='/images/cocktail-header.jpg')
+    a(href="/") Cocktail
+  form(action="/search" method="get")
+    p.message #{messages}
+    #form.input-group
+      .col-xs-3
+        select#type.form-control(name='type')
+          option(value='1') Name
+          option(value='2') Ingredient
+          option(value='3') Alcoholic
+          option(value='4') NonAlcoholic
+      if keywords
+        input.form-control(type='text', placeholder='keywords', name='keywords', value='#{keywords}')
+      else
+        input.form-control(type='text', placeholder='keywords', name='keywords')
+      span.input-group-btn
+        button.btn.btn-default(type='submit') Search
+  section.article
+    - for(var i = 0; i < res.length; i++) {
+      - var obj = res[i]
+      div.card
+        img.card-img(src='#{obj.strDrinkThumb}', alt='', srcset="")
+        .card-content
+          h1.card-title #{obj.strDrink}
+        .card-link
+          a(href='/detail?id=' + '#{obj.idDrink}') Detail
+    - }
