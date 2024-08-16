@@ -11,7 +11,7 @@
   "author": "Hiromu Sasaki",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "jquery": "^3.5.0"
   },
   "devDependencies": {
